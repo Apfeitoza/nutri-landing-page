@@ -1,6 +1,5 @@
-
-.DS_Store
-__MACOSX/
-.AppleDouble
-.LSOverride
 node_modules/
+.sass-cache/
+*.css.map
+.DS_Store
+dist/

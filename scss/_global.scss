@@ -1,0 +1,46 @@
+// RESET CSS
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* -----COMPONENTES REUTILIZÁVEIS----- */
+
+// Estilo do botão (sobrescrever Bootstrap)
+
+.btn-primary {
+  @include type-2(18);
+  text-transform: uppercase;
+  letter-spacing: 5%;
+  font-weight: bold;
+  color: $c-color-0;
+  max-height: 56px;
+  padding: 12px 16px;
+  border-radius: 50px;
+  background: $c-color-3;
+  border: none;
+
+  @include device(l) {
+    @include type-2(20);
+    padding: 20px 32px;
+  }
+  &:hover,
+  &:focus {
+    background: $c-color-4;
+  }
+}
+
+.social-icon {
+  width: 56px;
+  height: 56px;
+  background: $b-color-2;
+  border: 1px solid rgba($color: $c-color-2, $alpha: 0.2);
+  border-radius: 22%;
+  font-size: 24px;
+  i {
+    color: $c-color-4;
+  }
+}

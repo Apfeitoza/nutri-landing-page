@@ -1,0 +1,113 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 682px;
+  @include device(xl) {
+    height: 768px;
+  }
+  overflow: hidden;
+  background-color: $b-color-0;
+
+  // ---Swiper---
+  &__slider {
+    width: 100%;
+    height: 100%;
+  }
+  &__slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 240px 16px 48px;
+    @include device(m) {
+      padding: 340px 0 96px;
+      background-size: auto 110%;
+      background-position: top left;
+    }
+  }
+
+  // ---Bg e gradiente---
+  &__slide--1 {
+    background-image:
+      linear-gradient(
+        1.06deg,
+        rgba(0, 0, 0, 0.32) 0.83%,
+        rgba(16, 35, 54, 0.24) 49.93%,
+        rgba(16, 35, 54, 0.08) 99.03%
+      ),
+      linear-gradient(
+        90.26deg,
+        rgba(21, 66, 48, 0.15) 0.21%,
+        rgba(16, 35, 54, 0.06) 45.01%,
+        rgba(70, 116, 70, 0.045) 57.26%,
+        rgba(70, 116, 70, 0.03) 69.52%
+      ),
+      url(../img/photo/img-1.jpg);
+  }
+
+  &__slide--2 {
+    background-image:
+      linear-gradient(
+        300.51deg,
+        rgba(0, 0, 0, 0.32) 1%,
+        rgba(84, 56, 133, 0.16) 45.24%,
+        rgba(84, 56, 133, 0.08) 76.17%
+      ),
+      linear-gradient(
+        270.06deg,
+        rgba(0, 0, 0, 0.3) 0.05%,
+        rgba(84, 56, 133, 0.12) 70.05%,
+        rgba(84, 56, 133, 0.06) 99.95%
+      ),
+      url(../img/photo/img-2.jpg);
+  }
+
+  // --- Conteudo ---
+  &__content {
+    gap: 24px;
+    @media screen and (max-width: 991.9px) {
+      text-align: center !important;
+      align-items: center !important;
+      gap: 8px;
+    }
+  }
+
+  &__title {
+    @include type-1(40);
+    @include device(m) {
+      @include type-1(48);
+    }
+    @include device(l) {
+      @include type-1(64);
+    }
+    color: $b-color-0;
+    span {
+      font-weight: bold;
+    }
+    .verde {
+      color: $b-color-4;
+    }
+    .roxo {
+      color: $c-color-2;
+    }
+  }
+  &__desc {
+    @include type-2(16);
+    color: $s-color-1;
+    @include device(m) {
+      @include type-2(18);
+    }
+    @include device(l) {
+      @include type-2(20);
+    }
+  }
+}
+
+//Estilo do bullet do swiper
+.swiper {
+  --swiper-pagination-color: #{$b-color-2};
+  --swiper-pagination-bullet-inactive-color: #{$b-color-1};
+  --swiper-pagination-bullet-inactive-opacity: 0.5;
+  --swiper-pagination-bottom: 32px;
+}

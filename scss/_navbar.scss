@@ -1,0 +1,93 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  // Logotipo
+  &__logo {
+    margin: 0;
+    max-width: 170px;
+    img {
+      width: 80%;
+      @include device(l) {
+        width: 100%;
+      }
+    }
+  }
+  // Capsula de navegação - estilos gerais
+  &__nav {
+    margin-top: 32px;
+    padding: 8px 24px;
+    max-height: 80px;
+    background: $b-color-0;
+    border: 1px solid $c-color-0;
+    border-radius: 30px;
+    @include box-shadow(1);
+    @include device(l) {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    @include device(m) {
+      border-radius: 50px;
+    }
+  }
+  // Lista de links
+  &__nav-list {
+    @include type-1(16);
+    gap: 18px;    
+    @include device(m) {
+      @include type-1(20);      
+    }
+    @include device(l) {      
+      gap: 24px;
+    }
+  }
+  &__nav-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .nav-link {
+      color: $s-color-6;
+    }
+    .active {
+      font-weight: bold;
+      color: $s-color-6 !important;
+    }
+  }
+  // Detalhe decorativo entre os links
+  &__nav-detail {
+    width: 20px;
+    height: 2px;
+    border-radius: 5px;
+    background: $c-color-3;
+    @include device(m) {
+      width: 2px;
+      height: 20px;
+    }    
+  }
+  // Toggle button
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 10px;
+    background: $c-color-3;
+    border: none;
+  }
+  &__button-icon {
+    color: $c-color-0;
+    font-size: 40px;
+  }
+  // Estilo caixa de navegação mobile
+  &__nav-mobile {
+    background: $b-color-0;
+    border: 1px solid $c-color-0;
+    border-radius: 30px;
+    padding: 20px;
+    @include box-shadow(1);
+  }
+}

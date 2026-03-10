@@ -1,0 +1,14 @@
+//---Geral---
+@import 'variables-e-mixins';
+@import '../node_modules/bootstrap/dist/css/bootstrap.css';
+@import 'global';
+
+//---Seções----
+@import 'navbar';
+@import 'footer';
+@import 'hero';
+@import 'sobre';
+@import 'metodo';
+@import 'planos';
+@import 'depoimentos';
+

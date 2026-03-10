@@ -1,12 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Estratégias nutricionais para quem busca performance esportiva ou mais qualidade de vida. Comece sua mudança hoje!">
-  <title>Nutricionista - Caren Midena</title>
+  <title>Caren Midena | Nutrição e Bem-estar</title>
+  <!-- FAVICON -->
+  <link rel="icon" href="img/favicon/favicon.ico">
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- SWIPER -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <!-- BOOTSTRAP ICONS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- ESTILOS -->
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-  
+
+  <header class="header">
+    <nav class="navbar navbar-nav navbar-expand-lg header__nav mx-auto justify-content-center col-11 col-xxl-10">
+
+      <div class="container-fluid w-100">
+
+        <a href="./index.html" class="navbar-brand header__logo">
+          <img src="./img/logo/kiwi-logo.svg" alt="Logotipo Caren">
+        </a>
+
+        <button class="navbar-toggler border-0 p-0 header__button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list header__button-icon"></i>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between header__nav-desktop d-none d-lg-flex">
+          <ul class="navbar-nav header__nav-list align-items-center mx-auto">
+            <li class="nav-item header__nav-item">
+              <a class="nav-link active" href="#sobre">Sobre</a>
+            </li>
+            <div class="header__nav-detail"></div>
+            <li class="nav-item header__nav-item">
+              <a class="nav-link" href="#metodo">Método</a>
+            </li>
+            <div class="header__nav-detail"></div>
+            <li class="nav-item header__nav-item">
+              <a class="nav-link" href="#planos">Planos</a>
+            </li>
+            <div class="header__nav-detail"></div>
+            <li class="nav-item header__nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+          </ul>
+
+          <div class="header__actions align-items-center">
+            <div class="header__socials d-flex d-lg-none gap-3 mb-4 justify-content-center">
+              <a href="https://www.instagram.com/nutricarenmidena/" class="header__social-icon d-flex align-items-center justify-content-center text-decoration-none">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="https://wa.me/5567998654662" class="header__social-icon d-flex align-items-center justify-content-center text-decoration-none">
+                <i class="bi bi-whatsapp"></i>
+              </a>
+            </div>
+
+            <a href="https://wa.me/5567998654662" class="btn btn-primary d-flex align-items-center justify-content-center gap-2"><i class="bi bi-whatsapp"></i>Inscreva-se</a>
+          </div>
+
+        </div>
+      </div>
+
+    </nav>
+    <div class="mx-auto mt-2 collapse navbar-collapse justify-content-between header__nav-mobile d-lg-none col-11" id="navbarContent">
+      <ul class="navbar-nav header__nav-list align-items-center mx-auto my-5">
+        <li class="nav-item header__nav-item">
+          <a class="nav-link active" href="#sobre">Sobre</a>
+        </li>
+        <div class="header__nav-detail"></div>
+        <li class="nav-item header__nav-item">
+          <a class="nav-link" href="#metodo">Método</a>
+        </li>
+        <div class="header__nav-detail"></div>
+        <li class="nav-item header__nav-item">
+          <a class="nav-link" href="#planos">Planos</a>
+        </li>
+        <div class="header__nav-detail"></div>
+        <li class="nav-item header__nav-item">
+          <a class="nav-link" href="#faq">FAQ</a>
+        </li>
+      </ul>
+
+      <div class="header__actions align-items-center">
+        <div class="header__socials d-flex d-lg-none gap-3 mb-4 justify-content-center">
+          <a href="https://www.instagram.com/nutricarenmidena/" class="social-icon d-flex align-items-center justify-content-center text-decoration-none">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://wa.me/5567998654662" class="social-icon d-flex align-items-center justify-content-center text-decoration-none">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
+
+        <a href="https://wa.me/5567998654662" class="btn btn-primary d-flex align-items-center justify-content-center gap-2"><i class="bi bi-whatsapp"></i>Inscreva-se</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+
+    <div class="swiper hero__slider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide hero__slide hero__slide--1 d-flex flex-column justify-content-center">
+          <div class="container p-0">
+            <div class="hero__content w-100 d-flex flex-column align-items-center align-items-lg-start text-start">
+              <h1 class="hero__title mb-0">Resultados reais, <br>sem abrir mão do <span class="verde">equilíbrio.</span></h1>
+              <p class="hero__desc col-lg-6 mb-0">Alcance seus objetivos com um acompanhamento individualizado e sem sofrimento. Saúde e bem-estar através de uma nutrição descomplicada, segura e duradoura.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide hero__slide hero__slide--2 d-flex flex-column justify-content-center">
+          <div class="container ">
+            <div class="hero__content w-100 d-flex flex-column align-items-center align-items-lg-end text-end">
+              <h1 class="hero__title mb-0"><span class="roxo">Alta performance,</span><br>que funciona para você.</h1>
+              <p class="hero__desc col-lg-6 mb-0">Nutrição personalizada para quem busca performance no treino e leveza na rotina. Estratégias seguras e sem restrições para você alcançar sua melhor versão.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination hero__pagination"></div>
+
+
+
+    </div>
+
+
+  </section>
+
+  <main>
+
+  </main>
+
+  <footer>
+
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

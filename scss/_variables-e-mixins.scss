@@ -1,0 +1,119 @@
+// ---CORES---
+// Cores de Base
+$b-color-0: #f5fcf5;
+$b-color-1: #e1f7e1;
+$b-color-2: #bce5bd;
+$b-color-3: #a4dba5;
+$b-color-4: #87c788;
+$b-color-5: #76a876;
+$b-color-6: #4c754d;
+$b-color-7: #154216;
+
+// Cores de Contraste
+$c-color-0: #f9efff;
+$c-color-1: #d9cae5;
+$c-color-2: #baa3cc;
+$c-color-3: #a584bf;
+$c-color-4: #80679e;
+$c-color-5: #50406b;
+
+// Cores de Suporte
+$s-color-0: #f5f9fc;
+$s-color-1: #ebf3fa;
+$s-color-2: #ccdff0;
+$s-color-3: #a6c4de;
+$s-color-4: #6a8bab;
+$s-color-5: #4c6d8c;
+$s-color-6: #32506d;
+$s-color-7: #203b54;
+$s-color-8: #102336;
+$s-color-9: #081624;
+
+// ---Tipografia---
+$font-1: "Montserrat", sans-serif;
+$font-2: "Lato", sans-serif;
+
+// ---Mixins de Tipografia---
+
+@mixin type-1($size) {
+  font-family: $font-1;
+  text-transform: uppercase;
+  letter-spacing: -2%;
+  line-height: 1.2;
+
+  @if $size == 16 {
+    font-size: 1rem;
+  } @else if $size == 20 {
+    font-size: 1.25rem;
+  } @else if $size == 24 {
+    font-size: 1.5rem;
+  } @else if $size == 32 {
+    font-size: 2rem;
+  } @else if $size == 40 {
+    font-size: 2.5rem;
+  } @else if $size == 48 {
+    font-size: 3rem;
+  } @else if $size == 64 {
+    font-size: 4rem;
+  }
+}
+
+@mixin type-2($size) {
+  font-family: $font-2;
+  letter-spacing: normal;
+  line-height: 1.2;
+
+  @if $size == 14 {
+    font-size: 0.875rem;
+  } @else if $size == 16 {
+    font-size: 1rem;
+  } @else if $size == 18 {
+    font-size: 1.125rem;
+  } @else if $size == 20 {
+    font-size: 1.25rem;
+  } @else if $size == 24 {
+    font-size: 1.5rem;
+  } @else if $size == 32 {
+    font-size: 2rem;
+  } @else if $size == 40 {
+    font-size: 3rem;
+  } @else if $size == 48 {
+    font-size: 4rem;
+  }
+}
+
+// Variáveis de tamanho de tela
+$xl-device: 1400px;
+$l-device: 1200px;
+$m-device: 992px;
+$s-device: 768px;
+
+//Mixin de media-querie
+
+@mixin device($size) {
+  @if $size == xl {
+    @media screen and (min-width: #{$xl-device}) {
+      @content;
+    }
+  } @else if $size == l {
+    @media screen and (min-width: #{$l-device}) {
+      @content;
+    }
+  } @else if $size == m {
+    @media screen and (min-width: #{$m-device}) {
+      @content;
+    }
+  } @else if $size == s {
+    @media screen and (min-width: #{$s-device}) {
+      @content;
+    }
+  }
+}
+
+// Mixin de shadow
+
+@mixin box-shadow($tom) {
+  @if $tom == 1 {
+    box-shadow: 0 2px 1px 0 rgba(21, 66, 48, 0.15);
+  }
+}

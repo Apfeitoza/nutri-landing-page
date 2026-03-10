@@ -9,14 +9,8 @@
 
   //---Título da seção---
   &__title {
-    @include type-1(32);
+    @include title;
     margin-bottom: 48px;
-    @include device(m) {
-      @include type-1(48);
-    }
-    span {
-      font-weight: bold;
-    }
     &::after {
       @include detail($c-color-3);
     }

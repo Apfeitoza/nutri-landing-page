@@ -120,12 +120,24 @@ $s-device: 768px;
 
 //mixin do detalhe dos títulos
 
-@mixin detail ($color) {
-  content: "";  
+@mixin detail($color) {
+  content: "";
   display: block;
   width: 64px;
   height: 3px;
   border-radius: 5px;
   margin: 0 auto;
   background-color: $color;
+}
+
+// Mixin para títulos
+@mixin title {
+  @include type-1(32);
+  
+  @include device(m) {
+    @include type-1(48);
+  }
+  span {
+    font-weight: bold;
+  }
 }

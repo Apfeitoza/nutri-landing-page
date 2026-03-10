@@ -1,0 +1,79 @@
+.metodo {
+  background-color: rgba($color: $c-color-3, $alpha: 0.4);
+  padding: 64px 16px;
+
+  @include device(m) {
+    padding-top: 120px;
+    padding-bottom: 96px;
+  }
+
+  // ---Título da seção---
+  &__title-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 64px;
+    padding: 16px;
+    gap: 24px;
+    @include device(s) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  &__title {
+    @include title;
+    text-align: center;
+    &::after {
+      @include detail($b-color-5);
+      @include device(s) {
+        margin-left: 0;
+        margin-right: auto;
+      }
+    }
+    @include device(s) {
+      text-align: start;
+    }
+  }
+  &__title-desc {
+    @include type-2(14);
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    color: $s-color-5;
+    text-align: center;
+    @include device(s) {
+      text-align: end;
+    }
+  }
+
+  //---Cards---
+  &__cards-wrapper {
+    margin: 0 16px;
+    max-width: 2000px;
+  }
+  &__card-wrapper {    
+    flex: 1;
+    background-color: $c-color-0;    
+    border-radius: 25px;
+    padding: 32px 20px;
+    border: 1px solid rgba($color: $b-color-4, $alpha: 0.2);
+  }
+  &__card-title {
+    @include type-1(20);
+    text-transform: initial;
+    text-align: center;
+    font-weight: bold;
+    color: $c-color-5;
+    margin-bottom: 24px;
+  }
+  &__card-content {
+    @include type-2(16);
+    @include device(s) {
+      @include type-2(18);
+    }
+    color: $s-color-6;
+    text-align: center;
+  }
+  .icon-box {
+    margin-bottom: 8px;
+  }
+}

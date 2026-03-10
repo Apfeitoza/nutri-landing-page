@@ -15,7 +15,7 @@
   line-height: 1.2;
   font-size: 1.125rem;
   text-transform: uppercase;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
   font-weight: bold;
   color: #f9efff;
   max-height: 56px;
@@ -47,6 +47,15 @@
 }
 .social-icon i {
   color: #80679e;
+}
+
+.icon-box {
+  display: flex;
+  width: 56px;
+  height: 56px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22%;
 }
 
 .header {
@@ -292,7 +301,6 @@
   letter-spacing: -2%;
   line-height: 1.2;
   font-size: 2rem;
-  margin-bottom: 48px;
 }
 @media screen and (min-width: 992px) {
   .sobre__title {
@@ -305,6 +313,9 @@
 }
 .sobre__title span {
   font-weight: bold;
+}
+.sobre__title {
+  margin-bottom: 48px;
 }
 .sobre__title::after {
   content: "";
@@ -448,6 +459,132 @@
   .sobre__imagem--atleta {
     border-radius: 0px 0px 50px 0px;
   }
+}
+
+.metodo {
+  background-color: rgba(165, 132, 191, 0.4);
+  padding: 64px 16px;
+}
+@media screen and (min-width: 992px) {
+  .metodo {
+    padding-top: 120px;
+    padding-bottom: 96px;
+  }
+}
+.metodo__title-wrapper {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 64px;
+  padding: 16px;
+  gap: 24px;
+}
+@media screen and (min-width: 768px) {
+  .metodo__title-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.metodo__title {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -2%;
+  line-height: 1.2;
+  font-size: 2rem;
+}
+@media screen and (min-width: 992px) {
+  .metodo__title {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -2%;
+    line-height: 1.2;
+    font-size: 3rem;
+  }
+}
+.metodo__title span {
+  font-weight: bold;
+}
+.metodo__title {
+  text-align: center;
+}
+.metodo__title::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 3px;
+  border-radius: 5px;
+  margin: 0 auto;
+  background-color: #76a876;
+}
+@media screen and (min-width: 768px) {
+  .metodo__title::after {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .metodo__title {
+    text-align: start;
+  }
+}
+.metodo__title-desc {
+  font-family: "Lato", sans-serif;
+  letter-spacing: normal;
+  line-height: 1.2;
+  font-size: 0.875rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: #4c6d8c;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .metodo__title-desc {
+    text-align: end;
+  }
+}
+.metodo__cards-wrapper {
+  margin: 0 16px;
+  max-width: 2000px;
+}
+.metodo__card-wrapper {
+  flex: 1;
+  background-color: #f9efff;
+  border-radius: 25px;
+  padding: 32px 20px;
+  border: 1px solid rgba(135, 199, 136, 0.2);
+}
+.metodo__card-title {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -2%;
+  line-height: 1.2;
+  font-size: 1.25rem;
+  text-transform: initial;
+  text-align: center;
+  font-weight: bold;
+  color: #50406b;
+  margin-bottom: 24px;
+}
+.metodo__card-content {
+  font-family: "Lato", sans-serif;
+  letter-spacing: normal;
+  line-height: 1.2;
+  font-size: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .metodo__card-content {
+    font-family: "Lato", sans-serif;
+    letter-spacing: normal;
+    line-height: 1.2;
+    font-size: 1.125rem;
+  }
+}
+.metodo__card-content {
+  color: #32506d;
+  text-align: center;
+}
+.metodo .icon-box {
+  margin-bottom: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */

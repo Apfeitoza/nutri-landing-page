@@ -14,7 +14,7 @@
 .btn-primary {
   @include type-2(18);
   text-transform: uppercase;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
   font-weight: bold;
   color: $c-color-0;
   max-height: 56px;
@@ -43,4 +43,13 @@
   i {
     color: $c-color-4;
   }
+}
+
+.icon-box {
+  display: flex;
+  width: 56px;
+  height: 56px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22%;
 }

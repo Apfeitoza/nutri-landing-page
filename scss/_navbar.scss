@@ -1,5 +1,5 @@
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -50,6 +50,9 @@
 
     .nav-link {
       color: $s-color-6;
+      &:hover{
+        font-weight: bold;
+      }
     }
     .active {
       font-weight: bold;

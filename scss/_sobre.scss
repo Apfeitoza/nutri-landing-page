@@ -1,0 +1,112 @@
+.sobre {
+  background-color: $b-color-0;
+  padding: 64px 0;
+
+  @include device(m) {
+    padding-top: 120px;
+    padding-bottom: 96px;
+  }
+
+  //---Título da seção---
+  &__title {
+    @include type-1(32);
+    margin-bottom: 48px;
+    @include device(m) {
+      @include type-1(48);
+    }
+    span {
+      font-weight: bold;
+    }
+    &::after {
+      @include detail($c-color-3);
+    }
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+    @include device(s) {
+      flex-direction: row;
+      align-items: stretch;
+    }
+  }
+  &__imagem--nutri {
+    width: 100%;
+    min-height: 600px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px 50px 0px 0px;
+    @include device(s) {
+      border-radius: 50px 0px 0px 0px;
+    }
+  }
+  &__wrapper {
+    background-color: $b-color-1;
+    padding: 16px;
+    gap: 16px;
+    @include device(s) {
+      padding: 24px;
+      flex: 1;
+    }
+    @include device(l) {
+      padding: 48px;
+    }
+  }
+  &__subtitle {
+    @include type-2(24);
+    text-align: center;
+    color: $s-color-8;
+    @include device(m) {
+      @include type-2(32);
+    }
+    @include device(s) {
+      text-align: start;
+    }
+  }
+  &__content {
+    @include type-2(16);
+    color: $s-color-6;
+    @include device(m) {
+      @include type-2(20);
+      line-height: 1.5;
+    }
+  }
+  &__credenciais {
+    border-radius: 0 0 50px 50px;
+    @include device(s) {
+      border-radius: 0;
+    }
+  }
+  &__cred-title {
+    &::after {
+      @include detail($c-color-3);
+      @include device(s) {
+        margin-left: 0;
+        margin-right: auto;
+      }
+    }
+  }
+  &__credenciais-item {
+    display: inline-flex;
+    @include type-2(16);
+    color: $s-color-6;
+    @include device(m) {
+      @include type-2(20);
+      line-height: 1.5;
+    }
+    gap: 12px;
+    i {
+      color: $c-color-3;
+    }
+  }
+  &__imagem--atleta {
+    width: 100%;
+    height: 100%;
+    max-height: 360px;
+    object-fit: cover;
+    @include device(s) {
+      border-radius: 0px 0px 50px 0px;
+    }
+  }
+}

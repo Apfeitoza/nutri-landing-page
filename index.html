@@ -140,10 +140,10 @@
 
   <main>
     <section id="_sobre" class="sobre">
-      <div class="sobre__title text-center">
-        <h2><span>Sobre</span> mim</h2>
-      </div>
-      <div class="container ">
+
+      <h2 class="sobre__title text-center"><span>Sobre</span> mim</h2>
+
+      <div class="container p-0">
         <div class="row col-md-10  mx-auto sobre__items">
           <div class="col-md-5 p-0">
             <img class="d-block sobre__imagem--nutri" src="./img/photo/caren.jpg" alt="Nutricionista Caren Midena">
@@ -188,14 +188,11 @@
 
     <section id="_metodo" class="metodo">
       <div class="metodo__title-wrapper d-flex col-md-10 mx-auto">
-        <div class="metodo__title">
-          <h2>
-            Nutrição inteligente,<br><span>resultados duradouros.</span>
-          </h2>
-        </div>
-        <div class="metodo__title-desc col-md-4 col-lg-3 text-uppercase">
-          <p>acompanhamento contínuo para você alcançar sua melhor versão.</p>
-        </div>
+
+        <h2 class="metodo__title">
+          Nutrição inteligente,<br><span>resultados duradouros.</span>
+        </h2>
+        <p class="metodo__title-desc col-md-4 col-lg-3 text-uppercase">acompanhamento contínuo para você alcançar sua melhor versão.</p>
       </div>
       <div class="metodo__cards-wrapper mx-auto">
         <div class="col-md-10 d-flex mx-auto">
@@ -233,7 +230,7 @@
             <li class="metodo__card col-md-6 col-lg-4 d-flex flex-column">
               <div class="metodo__card-wrapper d-flex flex-column align-items-center justify-content-center">
                 <div class="icon-box" style="background: rgba(230, 158, 23, 0.2);">
-                <img src="./img/icons/stopwatch.svg" alt="Cronômetro">
+                  <img src="./img/icons/stopwatch.svg" alt="Cronômetro">
                 </div>
                 <h4 class="metodo__card-title">Monitoramento de Evolução</h4>
                 <p class="metodo__card-content">Além da balança: usamos guias de medidas e fotos evolutivas para enxergar sua transformação real.</p>
@@ -262,6 +259,123 @@
             </li>
           </ul>
         </div>
+      </div>
+    </section>
+
+    <section id="_planos" class="planos">
+      <div class="planos__title-wrapper text-center">
+        <h2 class="planos__title">
+          O <span>investimento</span> que sua saúde merece.
+        </h2>
+        <p class="planos__title-desc text-uppercase">Encontre o plano que melhor se adapta aos seus objetivos e à sua rotina.</p>
+      </div>
+      <div class="form-check form-switch d-flex gap-2 justify-content-center align-items-center mb-5">
+        <input class="form-check-input" type="checkbox" id="descontoPix">
+        <label class="form-check-label" for="descontoPix">Pix (5% Desconto)</label>
+      </div>
+
+      <div class="container p-0 mb-5">
+        <div class="row mx-auto d-flex align-items-stretch justify-content-center g-3">
+          <div class="planos__card col-lg-4 d-flex order-lg-1">
+            <div class=" planos__card-wrapper  w-100">
+              <h3 class="planos__card-title text-center">Consulta Individual</h3>
+              <p class="planos__card-preco text-center mb-4">R$ <span class="plano-preco" data-price-pix="190,50">210</span></p>
+              <ul class="planos__card-content list-unstyled d-flex flex-column">
+                <li class="planos__card-item">
+                  <i class="bi bi-arrow-right-circle"></i>
+                  <p class="mb-3">Consulta online com duração média de 60-70 minutos;</p>
+                </li>
+                <li class="planos__card-item">
+                  <i class="bi bi-arrow-right-circle"></i>
+                  <p class="mb-3">Orientações personalizadas sobre hábitos e estilo de vida;</p>
+                </li>
+                <li class="planos__card-item">
+                  <i class="bi bi-arrow-right-circle"></i>
+                  <p class="mb-3">Guia de medidas corporais e instruções para fotos evolutivas;</p>
+                </li>
+                <li class="planos__card-item">
+                  <i class="bi bi-arrow-right-circle"></i>
+                  <p class="mb-3">Plano alimentar individualizado, adaptado à sua rotina e objetivos;</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="planos__card col-lg-4  d-flex order-first order-lg-2">
+            <div class=" planos__card-wrapper  w-100">
+              <span class="planos__card-etiqueta small">MELHOR ESCOLHA!</span>
+
+              <h3 class="planos__card-title text-center">Plano Trimestral</h3>
+              <div class="planos__preco-wrapper d-flex gap-2 mb-4 align-items-center justify-content-center">
+                <p class="planos__card-preco text-center mb-0">R$ <span class="plano-preco" data-price-pix="527,25">555</span></p>
+                <span class="plano-parc planos__card-parc">3x de <br> R$ 185</span>
+              </div>
+              <ul class="planos__card-content list-unstyled d-flex flex-column">
+                <li class="planos__card-item">
+                  <i class="bi bi-arrow-right-circle"></i>
+                  <p class="mb-3">3 consultas online (1 por mês);</p>
+                </li>
+                <li class="planos__card-item">
+                  <i class="bi bi-arrow-right-circle"></i>
+                  <p class="mb-3">Acompanhamento via WhatsApp para dúvidas pontuais;</p>
+                </li>
+                <li class="planos__card-item">
+                  <i class="bi bi-arrow-right-circle"></i>
+                  <p class="mb-3">Guia de medidas corporais e instruções para fotos evolutivas;</p>
+                </li>
+                <li class="planos__card-item">
+                  <i class="bi bi-arrow-right-circle"></i>
+                  <p class="mb-3">Plano alimentar individualizado, adaptado à sua rotina e objetivos com reajustes mensais;</p>
+                </li>
+                <li class="planos__card-item">
+                  <i class="bi bi-arrow-right-circle"></i>
+                  <p class="mb-3">Envio de materiais de apoio, orientações e estratégias práticas, adaptadas à sua rotina.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="planos__card col-lg-4 d-flex order-lg-3">
+            <div class=" planos__card-wrapper  w-100">
+
+              <h3 class="planos__card-title text-center">Plano Semestral</h3>
+              <div class="planos__preco-wrapper d-flex gap-2 mb-4 align-items-center justify-content-center">
+                <p class="planos__card-preco text-center mb-0">R$ <span class="plano-preco" data-price-pix="997,50">1050</span></p>
+                <span class="plano-parc planos__card-parc">6x de<br> R$ 175</span>
+              </div>
+
+              <ul class="planos__card-content list-unstyled d-flex flex-column">
+                <li class="planos__card-item">
+                  <i class="bi bi-arrow-right-circle"></i>
+                  <p class="mb-3">6 consultas online (1 por mês);</p>
+                </li>
+                <li class="planos__card-item">
+                  <i class="bi bi-arrow-right-circle"></i>
+                  <p class="mb-3">Suporte contínuo via WhatsApp;</p>
+                </li>
+                <li class="planos__card-item">
+                  <i class="bi bi-arrow-right-circle"></i>
+                  <p class="mb-3">Guia de medidas corporais e instruções para fotos evolutivas;</p>
+                </li>
+                <li class="planos__card-item">
+                  <i class="bi bi-arrow-right-circle"></i>
+                  <p class="mb-3">Plano alimentar individualizado, adaptado à sua rotina e objetivos com reajustes mensais;</p>
+                </li>
+                <li class="planos__card-item">
+                  <i class="bi bi-arrow-right-circle"></i>
+                  <p class="mb-3">Envio de materiais de apoio, orientações e estratégias práticas, adaptadas à sua rotina.</p>
+                </li>
+                <li class="planos__card-item">
+                  <i class="bi bi-arrow-right-circle"></i>
+                  <p class="mb-3">Ebook exclusivo com receitas saudáveis e práticas. <span class="hot-item small">HOT!</span></p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="planos__button-wrapper d-flex gap-3 flex-column justify-content-center mx-auto align-items-center col-lg-6">
+        <a href="https://wa.me/5567998654662" class="btn btn-primary d-flex align-items-center justify-content-center gap-2 w-100"><i class="bi bi-whatsapp"></i>Contrate seu plano agora!</a>
+        <p class="planos__title-desc text-center text-uppercase">Para mais condições de parcelamento, consulte as condições e taxas adicionais.</p>
       </div>
     </section>
   </main>

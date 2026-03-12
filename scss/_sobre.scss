@@ -1,11 +1,6 @@
 .sobre {
   background-color: $b-color-0;
-  padding: 64px 0;
-
-  @include device(m) {
-    padding-top: 120px;
-    padding-bottom: 96px;
-  }
+  @include padding-section;
 
   //---Título da seção---
   &__title {

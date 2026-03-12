@@ -115,6 +115,8 @@ $s-device: 768px;
 @mixin box-shadow($tom) {
   @if $tom == 1 {
     box-shadow: 0 2px 1px 0 rgba(21, 66, 48, 0.15);
+  } @else if $tom == 2 {
+    box-shadow: 2px 2px 1px 0 rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -133,11 +135,30 @@ $s-device: 768px;
 // Mixin para títulos
 @mixin title {
   @include type-1(32);
-  
+
   @include device(m) {
     @include type-1(48);
   }
   span {
     font-weight: bold;
+  }
+}
+
+// Mixin para subtitulos
+@mixin title-desc{
+    @include type-2(14);
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    color: $s-color-5;
+    text-align: center;
+}
+
+//---padronização do padding das seções---
+@mixin padding-section {
+  padding: 64px 16px;
+
+  @include device(m) {
+    padding-top: 120px;
+    padding-bottom: 96px;
   }
 }

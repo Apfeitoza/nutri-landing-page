@@ -1,0 +1,108 @@
+.planos {
+  background-color: $b-color-0;
+  @include padding-section;
+
+  &__title {
+    @include title;
+    margin-bottom: 24px;
+    &::after {
+      @include detail($c-color-3);
+    }
+    &-desc {
+      @include title-desc;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__card {
+    &-wrapper {
+      position: relative;
+      flex: 1;
+      background-color: #fff;
+      border-radius: 25px;
+      border: 2px solid $c-color-3;
+      padding: 48px 24px;
+      @include box-shadow(1);
+      transition: ease all 300ms;
+      &:hover {
+        transform: scale(1.02);
+        @include box-shadow(2);
+      }
+    }
+    &-content {
+      display: flex; // Faz a lista também ser flex
+      flex-direction: column; // Itens da lista um embaixo do outro
+      flex-grow: 1; // O SEGREDO: faz a lista "esticar" e ocupar o espaço vazio
+      margin-bottom: 0;
+    }
+    &-etiqueta {
+      position: absolute;
+      top: 0;
+      transform: translateY(-50%);
+      right: 5%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 86px;
+      height: 86px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      line-height: 1;
+      text-align: center;
+      letter-spacing: -0.05em;
+      background-color: #5bff4c;
+      border-radius: 50%;
+    }
+
+    &-title {
+      @include type-1(32);
+      font-weight: bold;
+      color: $s-color-7;
+      margin-bottom: 48px;
+    }
+
+    &-preco {
+      @include type-1(48);
+      color: $s-color-8;
+      span {
+        font-weight: bold;
+      }
+    }
+
+    &-parc {
+      @include type-1(14);
+      text-transform: none;
+      font-weight: bold;
+      color: $s-color-8;
+    }
+    &-item {
+      display: inline-flex;
+      gap: 8px;
+      i {
+        color: $c-color-3;
+      }
+      p {
+        @include type-2(16);
+        @include device(m) {
+          @include type-2(18);
+        }
+        color: $s-color-6;
+      }
+    }
+  }
+}
+
+.form-check-label {
+  @include title-desc;
+  text-transform: uppercase;
+  line-height: 0px;
+}
+
+.hot-item {
+  display: inline-block;
+  background-color: #5bff4c;
+  padding: 5px;
+  border-radius: 5px;
+  color: $s-color-7;
+  letter-spacing: 0.05em;
+}

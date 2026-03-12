@@ -23,6 +23,7 @@
   border-radius: 50px;
   background: #a584bf;
   border: none;
+  transition: ease all 300ms;
 }
 @media screen and (min-width: 1200px) {
   .btn-primary {
@@ -35,6 +36,7 @@
 }
 .btn-primary:hover, .btn-primary:focus {
   background: #80679e;
+  transform: scale(1.02);
 }
 
 .social-icon {
@@ -56,6 +58,17 @@
   align-items: center;
   justify-content: center;
   border-radius: 22%;
+}
+
+.form-check-input {
+  border: b-color-4;
+}
+.form-check-input:checked {
+  background-color: #a4dba5;
+  border: #87c788;
+}
+.form-check-input:focus {
+  background-color: #a4dba5;
 }
 
 .header {
@@ -197,7 +210,6 @@
 @media screen and (min-width: 992px) {
   .hero__slide {
     padding: 340px 0 96px;
-    background-size: auto 110%;
     background-position: top left;
   }
 }
@@ -287,7 +299,7 @@
 
 .sobre {
   background-color: #f5fcf5;
-  padding: 64px 0;
+  padding: 64px 16px;
 }
 @media screen and (min-width: 992px) {
   .sobre {
@@ -552,6 +564,11 @@
   border-radius: 25px;
   padding: 32px 20px;
   border: 1px solid rgba(135, 199, 136, 0.2);
+  transition: ease 300ms;
+}
+.metodo__card-wrapper:hover {
+  transform: scale(1.03);
+  box-shadow: 2px 2px 1px 0 rgba(0, 0, 0, 0.1);
 }
 .metodo__card-title {
   font-family: "Montserrat", sans-serif;
@@ -585,6 +602,173 @@
 }
 .metodo .icon-box {
   margin-bottom: 8px;
+}
+
+.planos {
+  background-color: #f5fcf5;
+  padding: 64px 16px;
+}
+@media screen and (min-width: 992px) {
+  .planos {
+    padding-top: 120px;
+    padding-bottom: 96px;
+  }
+}
+.planos__title {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -2%;
+  line-height: 1.2;
+  font-size: 2rem;
+}
+@media screen and (min-width: 992px) {
+  .planos__title {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -2%;
+    line-height: 1.2;
+    font-size: 3rem;
+  }
+}
+.planos__title span {
+  font-weight: bold;
+}
+.planos__title {
+  margin-bottom: 24px;
+}
+.planos__title::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 3px;
+  border-radius: 5px;
+  margin: 0 auto;
+  background-color: #a584bf;
+}
+.planos__title-desc {
+  font-family: "Lato", sans-serif;
+  letter-spacing: normal;
+  line-height: 1.2;
+  font-size: 0.875rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: #4c6d8c;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.planos__card-wrapper {
+  position: relative;
+  flex: 1;
+  background-color: #fff;
+  border-radius: 25px;
+  border: 2px solid #a584bf;
+  padding: 48px 24px;
+  box-shadow: 0 2px 1px 0 rgba(21, 66, 48, 0.15);
+  transition: ease all 300ms;
+}
+.planos__card-wrapper:hover {
+  transform: scale(1.02);
+  box-shadow: 2px 2px 1px 0 rgba(0, 0, 0, 0.1);
+}
+.planos__card-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-bottom: 0;
+}
+.planos__card-etiqueta {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 86px;
+  height: 86px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: -0.05em;
+  background-color: #5bff4c;
+  border-radius: 50%;
+}
+.planos__card-title {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -2%;
+  line-height: 1.2;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #203b54;
+  margin-bottom: 48px;
+}
+.planos__card-preco {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -2%;
+  line-height: 1.2;
+  font-size: 3rem;
+  color: #102336;
+}
+.planos__card-preco span {
+  font-weight: bold;
+}
+.planos__card-parc {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -2%;
+  line-height: 1.2;
+  text-transform: none;
+  font-weight: bold;
+  color: #102336;
+}
+.planos__card-item {
+  display: inline-flex;
+  gap: 8px;
+}
+.planos__card-item i {
+  color: #a584bf;
+}
+.planos__card-item p {
+  font-family: "Lato", sans-serif;
+  letter-spacing: normal;
+  line-height: 1.2;
+  font-size: 1rem;
+}
+@media screen and (min-width: 992px) {
+  .planos__card-item p {
+    font-family: "Lato", sans-serif;
+    letter-spacing: normal;
+    line-height: 1.2;
+    font-size: 1.125rem;
+  }
+}
+.planos__card-item p {
+  color: #32506d;
+}
+
+.form-check-label {
+  font-family: "Lato", sans-serif;
+  letter-spacing: normal;
+  line-height: 1.2;
+  font-size: 0.875rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: #4c6d8c;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 0px;
+}
+
+.hot-item {
+  display: inline-block;
+  background-color: #5bff4c;
+  padding: 5px;
+  border-radius: 5px;
+  color: #203b54;
+  letter-spacing: 0.05em;
 }
 
 /*# sourceMappingURL=style.css.map */

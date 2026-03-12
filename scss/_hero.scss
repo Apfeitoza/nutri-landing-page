@@ -21,8 +21,7 @@
     background-repeat: no-repeat;
     padding: 240px 16px 48px;
     @include device(m) {
-      padding: 340px 0 96px;
-      background-size: auto 110%;
+      padding: 340px 0 96px;      
       background-position: top left;
     }
   }

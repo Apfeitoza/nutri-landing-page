@@ -10,6 +10,14 @@
     @include device(m) {
       flex-direction: row;
     }
+    img {
+      @include device(m) {
+        width: 230px;
+        height: 160px;
+      }
+      min-width: 180px;
+      min-height: 110px;
+    }
   }
 
   &__contact-list {
@@ -21,6 +29,7 @@
     @include device(m) {
       text-align: start;
       flex-direction: row;
+      gap: 36px!important;
       margin-top: 0;
       margin-bottom: 0;
     }

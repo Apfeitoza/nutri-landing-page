@@ -22,6 +22,7 @@
       border-radius: 25px;
       border: 2px solid $c-color-3;
       padding: 48px 24px;
+      margin-bottom: 20px;
       @include box-shadow(1);
       transition: ease all 300ms;
       &:hover {

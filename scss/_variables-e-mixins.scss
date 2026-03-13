@@ -145,13 +145,14 @@ $s-device: 768px;
 }
 
 // Mixin para subtitulos
-@mixin title-desc{
-    @include type-2(14);
-    font-weight: bold;
-    letter-spacing: 0.05em;
-    color: $s-color-5;
-    text-align: center;
+@mixin title-desc {
+  @include type-2(14);
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: $s-color-5;
+  text-align: center;
 }
+
 
 //---padronização do padding das seções---
 @mixin padding-section {
@@ -162,5 +163,3 @@ $s-device: 768px;
     padding-bottom: 96px;
   }
 }
-
-

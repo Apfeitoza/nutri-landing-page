@@ -1,69 +1,72 @@
-//link ativo-inativo
-const navLinks = document.querySelectorAll(".nav-link");
-navLinks.forEach((link) => {
-  link.addEventListener("click", function () {
-    navLinks.forEach((l) => l.classList.remove("active"));
-    this.classList.add("active");
-  });
-});
+const initIfElementExists = (selector, callback) => {
+  const element = document.querySelector(selector);
+  if (element) callback(element);
+};
 
-//Swiper da hero
 document.addEventListener("DOMContentLoaded", () => {
-  // Carrossel do Hero - Home
-  const heroSliderElement = document.querySelector(".hero__slider");
+  
+  // --- 1. Link Ativo na Navegação ---
+  const navLinks = document.querySelectorAll(".nav-link");
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      navLinks.forEach((l) => l.classList.remove("active"));
+      link.classList.add("active");
+    });
+  });
 
-  if (heroSliderElement) {
+  // --- 2. Swiper Hero ---
+  initIfElementExists(".hero__slider", () => {
     new Swiper(".hero__slider", {
-      loop: false,
+      loop: true, 
       effect: "fade",
-      fadeEffect: {
-        crossFade: true,
-      },
-
+      fadeEffect: { crossFade: true },
+      autoplay: { delay: 10000 },
       pagination: {
         el: ".hero__pagination",
         clickable: true,
       },
     });
-  }
-});
+  });
 
-//Toggler pix
-const checkboxPix = document.getElementById("descontoPix");
+  // --- 3. Toggler de Preços (Pix) ---
+  initIfElementExists("#descontoPix", (checkboxPix) => {
+    const precos = document.querySelectorAll(".plano-preco");
+    const parcelamentos = document.querySelectorAll(".plano-parc");
 
-if (checkboxPix) {
-  const precos = document.querySelectorAll(".plano-preco");
-  const parcelamento = document.querySelectorAll(".plano-parc");
+    checkboxPix.addEventListener("change", () => {
+      precos.forEach((preco) => {
+        // Usando a técnica de troca de valores via dataset de forma mais segura
+        const valorAtual = preco.innerText;
+        const valorPix = preco.dataset.pricePix;
+        
+        preco.innerText = valorPix;
+        preco.dataset.pricePix = valorAtual;
+      });
 
-  checkboxPix.addEventListener("change", () => {
-    precos.forEach((preco) => {
-      const precoAtual = preco.innerText;
-      const precoNovo = preco.getAttribute("data-price-pix");
-      preco.innerText = precoNovo;
-      preco.setAttribute("data-price-pix", precoAtual);
-    });
-    parcelamento.forEach((i) => {
-      i.classList.toggle("d-none");
+      parcelamentos.forEach(parc => {        
+        parc.classList.toggle("d-none");
+      });
     });
   });
-}
 
-//Swiper depoimentos
-const swiper = new Swiper(".mySwiper", {
-  slidesPerView: "auto",
-  spaceBetween: 16,
-  centeredSlides: true,
-  loop: true,
-  grabCursor: true,
-
-  pagination: {
-    el: ".swiper_depoimentos",
-    clickable: true,
-  },
-
-  breakpoints: {
-    768: {
-      centeredSlides: false,
-    },
-  },
+  // --- 4. Swiper Depoimentos ---
+  initIfElementExists(".mySwiper", () => {
+    new Swiper(".mySwiper", {
+      slidesPerView: "auto",
+      spaceBetween: 16,
+      centeredSlides: true,
+      loop: true,
+      grabCursor: true,
+      pagination: {
+        el: ".swiper_depoimentos",
+        clickable: true,
+      },
+      breakpoints: {
+        768: {
+          centeredSlides: false,
+        },
+      },
+    });
+  });
 });
+

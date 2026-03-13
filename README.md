@@ -2,8 +2,8 @@
 
 Esta é uma landing page responsiva desenvolvida para um serviço de nutrição, focada em conversão e design limpo.
 
-> **Status do Projeto:** Concluído ✅
-> **Link do Projeto:** [Acesse aqui](https://apfeitoza.github.io/nutri-landing-page/)
+* > **Status do Projeto:** Concluído ✅
+* > **Link do Projeto:** [Acesse aqui](https://apfeitoza.github.io/nutri-landing-page/)
 
 ---
 

@@ -45,6 +45,12 @@
     }
   }
 
+  .mySwiper{
+    @include device(xl){
+      gap: 24px!important;
+    }
+  }
+
   .swiper-pagination.swiper_depoimentos {
     position: relative;
     bottom: 0;

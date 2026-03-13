@@ -993,6 +993,11 @@
   font-weight: bold;
   color: #154216;
 }
+@media screen and (min-width: 1400px) {
+  .depoimentos .mySwiper {
+    gap: 24px !important;
+  }
+}
 .depoimentos .swiper-pagination.swiper_depoimentos {
   position: relative;
   bottom: 0;
@@ -1075,6 +1080,95 @@
 }
 .cta__button-wrapper .btn-primary i {
   font-size: 28px;
+}
+
+.footer {
+  padding-top: 64px;
+  padding-bottom: 0px;
+}
+@media screen and (min-width: 992px) {
+  .footer {
+    padding-top: 120px;
+  }
+}
+.footer {
+  background-color: #f5fcf5;
+}
+.footer__content-wrapper {
+  flex-direction: column;
+}
+@media screen and (min-width: 992px) {
+  .footer__content-wrapper {
+    flex-direction: row;
+  }
+}
+.footer__contact-list {
+  font-family: "Lato", sans-serif;
+  letter-spacing: normal;
+  line-height: 1.2;
+  font-size: 1.25rem;
+  text-align: center;
+  flex-direction: column;
+  color: #32506d;
+  margin-top: 24px;
+}
+@media screen and (min-width: 992px) {
+  .footer__contact-list {
+    text-align: start;
+    flex-direction: row;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+.footer__contact-list p {
+  font-weight: bold;
+}
+.footer__contact-list a {
+  color: #32506d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer__contact-list a:hover {
+  color: #87c788;
+}
+.footer__copy {
+  flex-direction: column;
+}
+@media screen and (min-width: 992px) {
+  .footer__copy {
+    flex-direction: row;
+  }
+}
+.footer__copy {
+  width: 100%;
+  margin-top: 120px;
+  padding: 16px 30px;
+  background-color: #bce5bd;
+}
+.footer__copy-desc {
+  font-family: "Lato", sans-serif;
+  letter-spacing: normal;
+  line-height: 1.2;
+  font-size: 1.125rem;
+  color: #32506d;
+}
+@media screen and (min-width: 992px) {
+  .footer__copy-desc {
+    font-family: "Lato", sans-serif;
+    letter-spacing: normal;
+    line-height: 1.2;
+    font-size: 1.25rem;
+    margin-bottom: 0;
+  }
+}
+.footer__copy-logo {
+  display: block;
+  margin-top: 16px;
+}
+@media screen and (min-width: 992px) {
+  .footer__copy-logo {
+    margin-top: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

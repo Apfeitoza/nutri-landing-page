@@ -30,9 +30,9 @@
       }
     }
     &-content {
-      display: flex; // Faz a lista também ser flex
-      flex-direction: column; // Itens da lista um embaixo do outro
-      flex-grow: 1; // O SEGREDO: faz a lista "esticar" e ocupar o espaço vazio
+      display: flex;
+      flex-direction: column; 
+      flex-grow: 1; 
       margin-bottom: 0;
     }
     &-etiqueta {

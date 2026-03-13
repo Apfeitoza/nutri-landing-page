@@ -9,9 +9,7 @@
     margin: 0;
     max-width: 170px;
     img {
-      width: 80%;
-      shape-rendering: geometricPrecision;
-      image-rendering: -webkit-optimize-contrast;
+      width: 80%;  
       @include device(l) {
         width: 100%;
       }

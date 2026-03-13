@@ -5,6 +5,7 @@
   &__title {
     @include title;
     margin-bottom: 24px;
+    color: $s-color-7;
     &::after {
       @include detail($c-color-3);
     }

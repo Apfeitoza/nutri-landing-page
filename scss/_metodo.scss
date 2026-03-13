@@ -18,6 +18,7 @@
   &__title {
     @include title;
     text-align: center;
+    color: $s-color-7;
     &::after {
       @include detail($b-color-5);
       @include device(s) {

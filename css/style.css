@@ -12201,6 +12201,7 @@ textarea.form-control-lg {
   font-weight: bold;
 }
 .sobre__title {
+  color: #203b54;
   margin-bottom: 48px;
 }
 .sobre__title::after {
@@ -12392,6 +12393,7 @@ textarea.form-control-lg {
 }
 .metodo__title {
   text-align: center;
+  color: #203b54;
 }
 .metodo__title::after {
   content: "";
@@ -12508,6 +12510,7 @@ textarea.form-control-lg {
 }
 .planos__title {
   margin-bottom: 24px;
+  color: #203b54;
 }
 .planos__title::after {
   content: "";

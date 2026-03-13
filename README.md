@@ -19,11 +19,11 @@ Aqui você pode visualizar o protótipo que serviu de base para este projeto:
 
 ## 🚀 Tecnologias Utilizadas<!-- {"fold":true} -->
 O projeto foi construído utilizando as seguintes ferramentas:
-*![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) -  Estrutura semântica.
-*![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white) - Estilização modular com arquitetura de arquivos separada.
-*![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white) - Sistema de Grid e componentes responsivos.
-*![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black) - Interações de menu e comportamento do site.
-*![Figma](https://img.shields.io/badge/Figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) - Prototipação e Design UI.
+* ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) -  Estrutura semântica.
+* ![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white) - Estilização modular com arquitetura de arquivos separada.
+* ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white) - Sistema de Grid e componentes responsivos.
+* ![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black) - Interações de menu e comportamento do site.
+* ![Figma](https://img.shields.io/badge/Figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) - Prototipação e Design UI.
 —
 ## 🗂️ Estrutura de Pastas<!-- {"fold":true} -->
 

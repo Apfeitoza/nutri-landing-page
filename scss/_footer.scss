@@ -17,6 +17,8 @@
       }
       min-width: 180px;
       min-height: 110px;
+      shape-rendering: geometricPrecision;
+      image-rendering: -webkit-optimize-contrast;
     }
   }
 
@@ -29,7 +31,7 @@
     @include device(m) {
       text-align: start;
       flex-direction: row;
-      gap: 36px!important;
+      gap: 36px !important;
       margin-top: 0;
       margin-bottom: 0;
     }

@@ -10,6 +10,8 @@
     max-width: 170px;
     img {
       width: 80%;
+      shape-rendering: geometricPrecision;
+      image-rendering: -webkit-optimize-contrast;
       @include device(l) {
         width: 100%;
       }
@@ -79,7 +81,7 @@
     height: 56px;
     border-radius: 10px;
     background: $c-color-3;
-    border: none;    
+    border: none;
     transition: all ease 0.3s;
     &:focus {
       @include box-shadow(1);

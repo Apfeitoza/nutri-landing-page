@@ -31,6 +31,7 @@
   &:focus {
     background: $c-color-4;
     transform: scale(1.02);
+    box-shadow: none;
   }
 }
 

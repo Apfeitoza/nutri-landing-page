@@ -37,6 +37,7 @@
 .btn-primary:hover, .btn-primary:focus {
   background: #80679e;
   transform: scale(1.02);
+  box-shadow: none;
 }
 
 .social-icon {
@@ -1006,6 +1007,74 @@
   opacity: 1;
   background-color: #baa3cc;
   transform: scale(1.2);
+}
+
+.cta {
+  padding: 120px 16px;
+  background: linear-gradient(90deg, rgba(71, 129, 186, 0.15) 0%, rgba(32, 59, 84, 0.5) 100%), linear-gradient(0deg, rgba(50, 80, 109, 0.56) 0%, rgba(50, 80, 109, 0.42) 67.57%, rgba(97, 155, 211, 0.28) 100%), url(../img/photo/img-3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cta__title {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -2%;
+  line-height: 1.2;
+  font-size: 2rem;
+}
+@media screen and (min-width: 992px) {
+  .cta__title {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -2%;
+    line-height: 1.2;
+    font-size: 3rem;
+  }
+}
+.cta__title span {
+  font-weight: bold;
+}
+.cta__title {
+  color: #e1f7e1;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 992px) {
+  .cta__title {
+    margin-bottom: 24px;
+  }
+}
+.cta__title span {
+  color: #a4dba5;
+}
+.cta__title-desc {
+  font-family: "Lato", sans-serif;
+  letter-spacing: normal;
+  line-height: 1.2;
+  font-size: 1.125rem;
+}
+@media screen and (min-width: 992px) {
+  .cta__title-desc {
+    font-family: "Lato", sans-serif;
+    letter-spacing: normal;
+    line-height: 1.2;
+    font-size: 1.5rem;
+    margin-bottom: 48px;
+  }
+}
+.cta__title-desc {
+  margin-bottom: 32px;
+  color: #ebf3fa;
+}
+.cta__button-wrapper .btn-primary {
+  background-color: #a4dba5;
+  color: #32506d;
+}
+.cta__button-wrapper .btn-primary:hover, .cta__button-wrapper .btn-primary:focus {
+  background: #87c788;
+}
+.cta__button-wrapper .btn-primary i {
+  font-size: 28px;
 }
 
 /*# sourceMappingURL=style.css.map */

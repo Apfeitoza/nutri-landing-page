@@ -1,0 +1,54 @@
+.cta {
+  padding: 120px 16px;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(71, 129, 186, 0.15) 0%,
+      rgba(32, 59, 84, 0.5) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(50, 80, 109, 0.56) 0%,
+      rgba(50, 80, 109, 0.42) 67.57%,
+      rgba(97, 155, 211, 0.28) 100%
+    ),
+    url(../img/photo/img-3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__title {
+    @include title;
+    color: $b-color-1;
+    margin-bottom: 16px;
+    @include device(m) {
+      margin-bottom: 24px;
+    }
+    span {
+      color: $b-color-3;
+    }
+    &-desc {
+      @include type-2(18);
+      @include device(m) {
+        @include type-2(24);
+        margin-bottom: 48px;
+      }
+      margin-bottom: 32px;
+      color: $s-color-1;
+    }
+  }
+
+  &__button-wrapper {
+    .btn-primary {
+      background-color: $b-color-3;
+      color: $s-color-6;
+      &:hover,
+      &:focus {
+        background: $b-color-4;
+      }
+      i {
+        font-size: 28px;
+      }
+    }
+  }
+}

@@ -771,4 +771,135 @@
   letter-spacing: 0.05em;
 }
 
+.faq {
+  padding: 64px 16px;
+}
+@media screen and (min-width: 992px) {
+  .faq {
+    padding-top: 120px;
+    padding-bottom: 96px;
+  }
+}
+.faq {
+  background: linear-gradient(178.24deg, rgba(188, 230, 189, 0.9) 4.86%, rgba(164, 219, 165, 0.7) 38.58%, #87c788 84.26%), rgba(135, 199, 136, 0.8);
+}
+.faq__title {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -2%;
+  line-height: 1.2;
+  font-size: 2rem;
+}
+@media screen and (min-width: 992px) {
+  .faq__title {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -2%;
+    line-height: 1.2;
+    font-size: 3rem;
+  }
+}
+.faq__title span {
+  font-weight: bold;
+}
+.faq__title {
+  margin-bottom: 24px;
+  color: #203b54;
+}
+.faq__title::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 3px;
+  border-radius: 5px;
+  margin: 0 auto;
+  background-color: #a584bf;
+}
+.faq__title-desc {
+  font-family: "Lato", sans-serif;
+  letter-spacing: normal;
+  line-height: 1.2;
+  font-size: 0.875rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: #4c6d8c;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.faq__card {
+  border: 1px solid #a4dba5 !important;
+  border-radius: 25px !important;
+  overflow: hidden;
+  background-color: #f5fcf5;
+  box-shadow: 0 2px 1px 0 rgba(21, 66, 48, 0.15);
+  margin-bottom: 16px;
+}
+.faq__card:has(.accordion-button:not(.collapsed)) {
+  border: 1px solid rgba(165, 132, 191, 0.5) !important;
+}
+.faq__card .accordion-button {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -2%;
+  line-height: 1.2;
+}
+@media screen and (min-width: 1200px) {
+  .faq__card .accordion-button {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -2%;
+    line-height: 1.2;
+    font-size: 1.5rem;
+  }
+}
+.faq__card .accordion-button {
+  font-weight: bold;
+  color: #203b54;
+  padding: 32px;
+  background-color: #f5fcf5;
+  box-shadow: none;
+}
+.faq__card .accordion-button::after {
+  display: none !important;
+}
+.faq__card .accordion-button::before {
+  content: "\f235";
+  font-family: "bootstrap-icons";
+  margin-left: auto;
+  order: 2;
+  transition: transform 0.3s ease;
+  font-size: 1.2rem;
+  color: #203b54;
+}
+.faq__card .accordion-button:not(.collapsed)::before {
+  transform: rotate(-180deg);
+  color: #a584bf;
+}
+.faq__card-resposta {
+  font-family: "Lato", sans-serif;
+  letter-spacing: normal;
+  line-height: 1.2;
+  font-size: 1.125rem;
+}
+@media screen and (min-width: 1200px) {
+  .faq__card-resposta {
+    font-family: "Lato", sans-serif;
+    letter-spacing: normal;
+    line-height: 1.2;
+    font-size: 1.5rem;
+  }
+}
+.faq__card-resposta {
+  padding: 0 16px 16px 16px;
+  color: #32506d;
+  line-height: 1.5;
+  margin: 0;
+}
+.faq__button-wrapper {
+  margin-top: 48px;
+}
+.faq__button-wrapper i {
+  font-size: 28px;
+}
+
 /*# sourceMappingURL=style.css.map */

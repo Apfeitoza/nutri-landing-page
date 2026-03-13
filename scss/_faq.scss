@@ -1,0 +1,86 @@
+.faq {
+  @include padding-section;
+  background:
+    linear-gradient(
+      178.24deg,
+      rgba(188, 230, 189, 0.9) 4.86%,
+      rgba(164, 219, 165, 0.7) 38.58%,
+      #87c788 84.26%
+    ),
+    rgba(135, 199, 136, 0.8);
+
+  &__title {
+    @include title;
+    margin-bottom: 24px;
+    color: $s-color-7;
+    &::after {
+      @include detail($c-color-3);
+    }
+
+    &-desc {
+      @include title-desc;
+      margin-bottom: 48px;
+    }
+  }
+
+  &__card {
+    border: 1px solid $b-color-3 !important;
+    border-radius: 25px !important;
+    overflow: hidden;
+    background-color: $b-color-0;
+    @include box-shadow(1);
+    margin-bottom: 16px;
+    &:has(.accordion-button:not(.collapsed)) {
+      border: 1px solid rgba($color: $c-color-3, $alpha: 0.5) !important;
+    }
+
+    .accordion-button {
+      @include type-1(18);
+      @include device(l) {
+        @include type-1(24);
+      }
+      font-weight: bold;
+      color: $s-color-7;
+      padding: 32px;
+      background-color: $b-color-0;
+      box-shadow: none;
+
+      &::after {
+        display: none !important;
+      }
+      &::before {
+        content: "\F235";
+        font-family: "bootstrap-icons";
+        margin-left: auto;
+        order: 2;
+        transition: transform 0.3s ease;
+        font-size: 1.2rem;
+        color: $s-color-7;
+      }
+      &:not(.collapsed) {
+        &::before {
+          transform: rotate(-180deg);
+          color: $c-color-3;
+        }
+      }
+    }
+  }
+
+  &__card-resposta {
+    @include type-2(18);
+    @include device(l) {
+      @include type-2(24);
+    }
+    padding: 0 16px 16px 16px;
+    color: $s-color-6;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  &__button-wrapper {
+    margin-top: 48px;
+    i {
+      font-size: 28px;
+    }
+  }
+}

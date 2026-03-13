@@ -16,7 +16,7 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-weight: bold;
-  color: $c-color-0;
+  color: $c-color-0!important;
   max-height: 56px;
   padding: 12px 16px;
   border-radius: 50px;
@@ -29,7 +29,8 @@
   }
   &:hover,
   &:focus {
-    background: $c-color-4;
+    background: $c-color-4!important;
+    color: $c-color-0!important;
     transform: scale(1.02);
     box-shadow: none;
   }

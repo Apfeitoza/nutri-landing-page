@@ -24,11 +24,11 @@
       border: 2px solid $c-color-3;
       padding: 48px 24px;
       margin-bottom: 20px;
-      @include box-shadow(1);
+      @include sombra(1);
       transition: ease all 300ms;
       &:hover {
         transform: scale(1.02);
-        @include box-shadow(2);
+        @include sombra(2);
       }
     }
     &-content {
@@ -99,8 +99,6 @@
   text-transform: uppercase;
   line-height: 0px;
 }
-
-
 
 .hot-item {
   display: inline-block;

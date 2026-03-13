@@ -28,7 +28,7 @@
     border-radius: 25px !important;
     overflow: hidden;
     background-color: $b-color-0;
-    @include box-shadow(1);
+    @include sombra(1);
     margin-bottom: 16px;
     &:has(.accordion-button:not(.collapsed)) {
       border: 1px solid rgba($color: $c-color-3, $alpha: 0.5) !important;

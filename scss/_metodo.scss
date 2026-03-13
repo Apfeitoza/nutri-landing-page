@@ -51,7 +51,7 @@
     transition: ease 300ms;
     &:hover {
       transform: scale(1.03);
-      @include box-shadow(2);
+      @include sombra(2);
     }
   }
   &__card-title {

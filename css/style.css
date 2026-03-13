@@ -11876,7 +11876,7 @@ textarea.form-control-lg {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-weight: bold;
-  color: #f9efff;
+  color: #f9efff !important;
   max-height: 56px;
   padding: 12px 16px;
   border-radius: 50px;
@@ -11894,7 +11894,8 @@ textarea.form-control-lg {
   }
 }
 .btn-primary:hover, .btn-primary:focus {
-  background: #80679e;
+  background: #80679e !important;
+  color: #f9efff !important;
   transform: scale(1.02);
   box-shadow: none;
 }
@@ -11969,6 +11970,7 @@ textarea.form-control-lg {
   background: #f5fcf5;
   border: 1px solid #f9efff;
   border-radius: 30px;
+  box-shadow: 0 2px 1px 0 rgba(21, 66, 48, 0.15) !important;
 }
 @media screen and (min-width: 1200px) {
   .header__nav {
@@ -12042,6 +12044,7 @@ textarea.form-control-lg {
   transition: all ease 0.3s;
 }
 .header__button:focus {
+  box-shadow: 0 2px 1px 0 rgba(21, 66, 48, 0.15) !important;
   transform: scale(1.05);
 }
 .header__button-icon {
@@ -12053,6 +12056,7 @@ textarea.form-control-lg {
   border: 1px solid #f9efff;
   border-radius: 30px;
   padding: 20px;
+  box-shadow: 0 2px 1px 0 rgba(21, 66, 48, 0.15) !important;
 }
 
 .hero {
@@ -12444,6 +12448,7 @@ textarea.form-control-lg {
 }
 .metodo__card-wrapper:hover {
   transform: scale(1.03);
+  box-shadow: 2px 2px 1px 0 rgba(0, 0, 0, 0.1) !important;
 }
 .metodo__card-title {
   font-family: "Montserrat", sans-serif;
@@ -12540,10 +12545,12 @@ textarea.form-control-lg {
   border: 2px solid #a584bf;
   padding: 48px 24px;
   margin-bottom: 20px;
+  box-shadow: 0 2px 1px 0 rgba(21, 66, 48, 0.15) !important;
   transition: ease all 300ms;
 }
 .planos__card-wrapper:hover {
   transform: scale(1.02);
+  box-shadow: 2px 2px 1px 0 rgba(0, 0, 0, 0.1) !important;
 }
 .planos__card-content {
   display: flex;
@@ -12706,6 +12713,7 @@ textarea.form-control-lg {
   border-radius: 25px !important;
   overflow: hidden;
   background-color: #f5fcf5;
+  box-shadow: 0 2px 1px 0 rgba(21, 66, 48, 0.15) !important;
   margin-bottom: 16px;
 }
 .faq__card:has(.accordion-button:not(.collapsed)) {
@@ -12844,6 +12852,7 @@ textarea.form-control-lg {
   height: 360px;
   border-radius: 25px;
   border: 1px solid #a4dba5;
+  box-shadow: 0 2px 1px 0 rgba(21, 66, 48, 0.15) !important;
 }
 .depoimentos__card-quote {
   font-family: "Lato", sans-serif;
@@ -12935,11 +12944,12 @@ textarea.form-control-lg {
   color: #ebf3fa;
 }
 .cta__button-wrapper .btn-primary {
-  background-color: #a4dba5;
-  color: #32506d;
+  background-color: #a4dba5 !important;
+  color: #32506d !important;
 }
 .cta__button-wrapper .btn-primary:hover, .cta__button-wrapper .btn-primary:focus {
-  background: #87c788;
+  background: #87c788 !important;
+  color: #32506d !important;
 }
 .cta__button-wrapper .btn-primary i {
   font-size: 28px;

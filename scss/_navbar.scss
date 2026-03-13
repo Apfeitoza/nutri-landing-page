@@ -9,7 +9,7 @@
     margin: 0;
     max-width: 170px;
     img {
-      width: 80%;  
+      width: 80%;
       @include device(l) {
         width: 100%;
       }
@@ -23,7 +23,7 @@
     background: $b-color-0;
     border: 1px solid $c-color-0;
     border-radius: 30px;
-    @include box-shadow(1);
+    @include sombra(1);
     @include device(l) {
       padding-left: 32px;
       padding-right: 32px;
@@ -82,7 +82,7 @@
     border: none;
     transition: all ease 0.3s;
     &:focus {
-      @include box-shadow(1);
+      @include sombra(1);
       transform: scale(1.05);
     }
   }
@@ -96,6 +96,6 @@
     border: 1px solid $c-color-0;
     border-radius: 30px;
     padding: 20px;
-    @include box-shadow(1);
+    @include sombra(1);
   }
 }

@@ -40,11 +40,12 @@
 
   &__button-wrapper {
     .btn-primary {
-      background-color: $b-color-3;
-      color: $s-color-6;
+      background-color: $b-color-3!important;
+      color: $s-color-6!important;
       &:hover,
       &:focus {
-        background: $b-color-4;
+        background: $b-color-4!important;
+        color: $s-color-6!important;
       }
       i {
         font-size: 28px;

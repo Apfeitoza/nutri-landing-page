@@ -27,27 +27,27 @@
   }
 
   &__card {
-    background-color: rgba($color: $c-color-0, $alpha: .5);
+    background-color: rgba($color: $c-color-0, $alpha: 0.5);
     padding: 20px;
     width: 280px;
     height: 360px;
     border-radius: 25px;
     border: 1px solid $b-color-3;
-    @include box-shadow(1);
+    @include sombra(1);
 
-    &-quote{
+    &-quote {
       @include type-2(18);
       color: $s-color-6;
     }
-    &-autor{
+    &-autor {
       font-weight: bold;
       color: $b-color-7;
     }
   }
 
-  .mySwiper{
-    @include device(xl){
-      gap: 24px!important;
+  .mySwiper {
+    @include device(xl) {
+      gap: 24px !important;
     }
   }
 

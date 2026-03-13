@@ -76,10 +76,15 @@
     align-items: center;
     justify-content: center;
     width: 56px;
-    height: 56px;    
+    height: 56px;
     border-radius: 10px;
     background: $c-color-3;
-    border: none;
+    border: none;    
+    transition: all ease 0.3s;
+    &:focus {
+      @include box-shadow(1);
+      transform: scale(1.05);
+    }
   }
   &__button-icon {
     color: $c-color-0;

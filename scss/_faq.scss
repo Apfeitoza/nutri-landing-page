@@ -37,7 +37,7 @@
     .accordion-button {
       @include type-1(18);
       @include device(l) {
-        @include type-1(24);
+        @include type-1(20);
       }
       font-weight: bold;
       color: $s-color-7;

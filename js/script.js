@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+//Toggler pix
 const checkboxPix = document.getElementById("descontoPix");
 
 if (checkboxPix) {
@@ -46,3 +47,23 @@ if (checkboxPix) {
     });
   });
 }
+
+//Swiper depoimentos
+const swiper = new Swiper(".mySwiper", {
+  slidesPerView: "auto",
+  spaceBetween: 16,
+  centeredSlides: true,
+  loop: true,
+  grabCursor: true,
+
+  pagination: {
+    el: ".swiper_depoimentos",
+    clickable: true,
+  },
+
+  breakpoints: {
+    768: {
+      centeredSlides: false,
+    },
+  },
+});

@@ -98,6 +98,12 @@
   line-height: 0px;
 }
 
+.form-check-input{
+  &:focus{
+    box-shadow: none;
+  }
+}
+
 .hot-item {
   display: inline-block;
   background-color: #5bff4c;

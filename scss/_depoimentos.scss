@@ -1,0 +1,65 @@
+.depoimentos {
+  @include padding-section;
+  @include device(m) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  background: #87c788
+    linear-gradient(
+      180deg,
+      rgba(135, 199, 136, 0.24) 0%,
+      rgba(118, 168, 118, 0.4) 41.6%,
+      rgba(76, 117, 77, 0.8) 100%
+    );
+
+  &__title {
+    @include title;
+    margin-bottom: 24px;
+    color: $s-color-7;
+    &::after {
+      @include detail($c-color-3);
+    }
+
+    &-desc {
+      @include title-desc;
+      margin-bottom: 48px;
+    }
+  }
+
+  &__card {
+    background-color: rgba($color: $c-color-0, $alpha: .5);
+    padding: 20px;
+    width: 280px;
+    height: 360px;
+    border-radius: 25px;
+    border: 1px solid $b-color-3;
+    @include box-shadow(1);
+
+    &-quote{
+      @include type-2(18);
+      color: $s-color-6;
+    }
+    &-autor{
+      font-weight: bold;
+      color: $b-color-7;
+    }
+  }
+
+  .swiper-pagination.swiper_depoimentos {
+    position: relative;
+    bottom: 0;
+    margin-top: 32px;
+
+    .swiper-pagination-bullet {
+      background-color: $c-color-5;
+      opacity: 0.4;
+      transition: all 0.3s ease;
+
+      &-active {
+        opacity: 1;
+        background-color: $c-color-2;
+        transform: scale(1.2);
+      }
+    }
+  }
+}
